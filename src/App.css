@@ -37,6 +37,10 @@ main {
   align-items: center;
 }
 
+.container-switch {
+  display: flex;
+}
+
 .switch {
   display: flex;
   justify-content: center;
@@ -45,6 +49,7 @@ main {
   width: 100px;
   border: 1px solid gray;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .container-display {
@@ -63,9 +68,12 @@ main {
   border-radius: 5px;
 }
 
-.red {
-  background-color: red;
+.blue {
+  background-color: blue;
 }
-.green {
-  background-color: green;
+.purple {
+  background-color: purple;
+}
+.white {
+  background-color: white;
 }

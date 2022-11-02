@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Switch = (props) => {
+  const [switchOn, setSwitchOn] = useState("");
+  const [switchOff, setSwitchOff] = useState("");
   return (
-    <div
-      className="switch"
-      onClick={() => {
-        const onOff = "On";
-        if (props.btn === onOff) {
-          props.setSwitch(props.switchBtn === true);
-        } else {
-          props.setSwitch(props.switchBtn === false);
-        }
-      }}
-    >
-      <p>{props.btn}</p>
+    <div className="container-switch">
+      <div
+        className={`switch ${switchOn}`}
+        onClick={() => {
+          props.setSwitch(true);
+          setSwitchOn("blue");
+          setSwitchOff("white");
+        }}
+      >
+        <p>ON</p>
+      </div>
+      <div
+        className={`switch ${switchOff}`}
+        onClick={() => {
+          props.setSwitch(false);
+          setSwitchOn("white");
+          setSwitchOff("purple");
+        }}
+      >
+        <p>OFF</p>
+      </div>
     </div>
   );
 };
