@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Display from "./components/Display";
+import Logo from "./components/Logo";
+import Switch from "./components/Switch";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <Logo />
       </header>
-    </div>
+      <main className="wrapper">
+        <div>
+          <Switch switch="On" />
+          <Switch switch="On" />
+          <Switch switch="On" />
+        </div>
+        <div>
+          <Switch switch="Off" />
+          <Switch switch="Off" />
+          <Switch switch="Off" />
+        </div>
+        <div className="container-display">
+          <Display />
+        </div>
+      </main>
+      <footer>
+        <p>Made at le Reacteur by Thiru - 2022</p>
+      </footer>
+    </>
   );
 }
 
