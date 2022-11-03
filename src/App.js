@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <header>
-        <Logo />
+        <Logo switch1={switch1} switch2={switch2} switch3={switch3} />
       </header>
       <main className="wrapper">
         <div>

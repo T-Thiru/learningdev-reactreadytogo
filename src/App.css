@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
 }
+@keyframes anim {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 1100px;
+  }
+}
 
 .wrapper {
   max-width: 1000px;
@@ -13,6 +21,12 @@ header {
 }
 .logo {
   width: 100px;
+}
+.logoAnimation {
+  position: relative;
+  animation-name: anim;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }
 .container-logo {
   display: flex;
