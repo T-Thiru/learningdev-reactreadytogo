@@ -23,6 +23,7 @@ header {
   width: 100px;
 }
 .logoAnimation {
+  scale: 1.5;
   position: relative;
   animation-name: anim;
   animation-duration: 4s;
